@@ -12,6 +12,9 @@
   --mobile-size: 375px;
 }
 
+/* =======================
+   Global Styles
+   ======================= */
 * {
   margin: 0;
   padding: 0;
@@ -34,15 +37,19 @@ body {
 img {
   max-width: 100%;
   display: block;
+  border-radius: 0.8rem;
 }
 
+/* =======================
+   Layout Containers
+   ======================= */
 .container,
 .main-container {
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .main-container {
@@ -50,47 +57,35 @@ img {
   background-color: var(--color-slate-300);
 }
 
-.font-weight-700 {
-  font-weight: 700;
-}
-
+/* =======================
+   QR Code Card Component
+   ======================= */
 .qr-code-card {
-  width: 300px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   gap: 1.3rem;
-  background-color: var(--color-white);
+  width: 300px;
   padding: 0.9rem;
-  border-radius: 0.8rem;
-}
-
-.qr-cpde-img img {
-  width: 100%;
+  background-color: var(--color-white);
   border-radius: 0.8rem;
 }
 
 .qr-code-info {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 0.8rem;
-}
-
-.qr-code-info .qr-code-info-header,
-.qr-code-info .qr-code-info-body {
   text-align: center;
 }
 
-.qr-code-info .qr-code-info-header {
+.qr-code-info-header {
   font-size: 1.09rem;
   font-weight: 700;
   color: var(--color-slate-900);
 }
 
-.qr-code-info .qr-code-info-body {
-  color: var(--color-slate-500);
+.qr-code-info-body {
   font-size: 0.8rem;
+  color: var(--color-slate-500);
 }
-
