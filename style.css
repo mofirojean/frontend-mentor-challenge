@@ -109,14 +109,14 @@ header nav {
 /* =======================
    Main styles
    ======================= */
-main {
+section {
   width: 60%;
   margin: 0 auto;
   flex-grow: 1;
   overflow-y: auto;
 }
 
-main .hero {
+section .hero {
   display: flex;
   flex-direction: column;
   width: 100%;
